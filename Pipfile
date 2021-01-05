@@ -5,8 +5,18 @@ name = "pypi"
 
 [packages]
 django = "==2.2.5"
+pillow = "*"
+shell = "*"
+django-countries = "*"
 
 [dev-packages]
+pylint = "*"
+black = "*"
+flake8 = "*"
+autopep8 = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.7.3"
+
+[pipenv]
+allow_prereleases = true
