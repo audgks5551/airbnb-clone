@@ -5,12 +5,12 @@ from . import models
 
 @admin.register(models.User)
 class CustoUserAdmin(UserAdmin):
-    
+
     """ Custom User Admin """
 
     fieldsets = UserAdmin.fieldsets + (
         (
-            "Custom Profile", 
+            "Custom Profile",
             {
                 "fields": (
                     "avatar",
@@ -19,8 +19,8 @@ class CustoUserAdmin(UserAdmin):
                     "birthdate",
                     "language",
                     "currency",
-                    "superhost"
+                    "superhost",
                 )
-            }
+            },
         ),
     )
